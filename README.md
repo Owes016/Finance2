@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
 
-## Project info
+# Personal Finance Visualizer
 
-**URL**: https://lovable.dev/projects/b6684ccc-48de-432d-9239-5788f41370cc
+A simple, responsive web application for tracking personal finances — built with Next.js, React, shadcn/ui, Recharts, and Tailwind CSS. This project helps users manage transactions, categorize expenses, and set budgets, all with clean visualizations.
 
-## How can I edit this code?
+## Live Demo
 
-There are several ways of editing your application.
+[https://your-deployment-url.com](https://your-deployment-url.com)
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b6684ccc-48de-432d-9239-5788f41370cc) and start prompting.
+### Stage 1: Basic Transaction Tracking
+- Add, edit, and delete transactions (amount, date, description)
+- Transaction list view
+- Monthly expenses bar chart
+- Basic form validation
+- Fully responsive UI
 
-Changes made via Lovable will be committed automatically to this repo.
+### Stage 2: Categories
+- Predefined categories for transactions
+- Category dropdown in transaction form
+- Dashboard with:
+  - Summary cards (total expenses, recent transactions, top category)
+  - Pie chart for category-wise breakdown
 
-**Use your preferred IDE**
+### Stage 3: Budgeting
+- Set monthly budgets per category
+- Budget vs actual spending chart
+- Simple insights (e.g., alert when budget exceeded)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
+- Next.js (App Router)
 - React
-- shadcn-ui
 - Tailwind CSS
+- shadcn/ui
+- Recharts
 
-## How can I deploy this project?
+## Notes
 
-Simply open [Lovable](https://lovable.dev/projects/b6684ccc-48de-432d-9239-5788f41370cc) and click on Share -> Publish.
+- No login or authentication
+- Frontend-only project (mock data/local state)
+- MongoDB mentioned in stack but not used in current implementation
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Getting Started
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/personal-finance-visualizer.git
+   cd personal-finance-visualizer
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Visit in browser:
+
+   http://localhost:3000
+
+
+## Deployment
+
+- Deployed on Vercel
+- Connect GitHub repo and deploy with one click
+
+## Author
+
+Created by [Your Name](https://github.com/your-username)
+
