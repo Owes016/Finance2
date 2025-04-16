@@ -5,7 +5,7 @@ A simple, responsive web application for tracking personal finances — built wi
 
 ## Live Demo
 
-[https://your-deployment-url.com](https://your-deployment-url.com)
+[[https://your-deployment-url.com](https://your-deployment-url.com)](https://finance2khbkca-git-main-owesknight-gmailcoms-projects.vercel.app)
 
 ## Features
 
