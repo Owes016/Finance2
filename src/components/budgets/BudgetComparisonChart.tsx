@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   BarChart,
@@ -56,8 +55,8 @@ const BudgetComparisonChart: React.FC<BudgetComparisonChartProps> = ({ month, ye
       return (
         <div className="bg-white p-3 border border-gray-200 rounded-md shadow-md">
           <p className="font-semibold">{data.name}</p>
-          <p>Budget: ${data.budget.toFixed(2)}</p>
-          <p>Actual: ${data.actual.toFixed(2)}</p>
+          <p>Budget: ₹{data.budget.toFixed(2)}</p>
+          <p>Actual: ₹{data.actual.toFixed(2)}</p>
           <p className={`font-medium ${isOverBudget ? 'text-red-500' : 'text-green-500'}`}>
             {isOverBudget ? 'Over budget' : 'Under budget'} by {Math.abs(variance)}%
           </p>
@@ -92,7 +91,7 @@ const BudgetComparisonChart: React.FC<BudgetComparisonChartProps> = ({ month, ye
             tick={{ fontSize: 12 }} 
           />
           <YAxis 
-            tickFormatter={(value) => `$${value}`}
+            tickFormatter={(value) => `₹${value}`}
           />
           <Tooltip content={<CustomTooltip />} />
           <Legend />

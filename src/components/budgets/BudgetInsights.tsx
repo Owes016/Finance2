@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { AlertCircle, CheckCircle, PieChart } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -72,7 +71,7 @@ const BudgetInsights: React.FC<BudgetInsightsProps> = ({ month, year }) => {
                 <span>
                   You've exceeded your {insight.categoryName} budget by{' '}
                   <span className="font-semibold">
-                    ${Math.abs(insight.difference).toFixed(2)}
+                    ₹{Math.abs(insight.difference).toFixed(2)}
                   </span>{' '}
                   ({Math.round(insight.percentageUsed)}% of budget used)
                 </span>
@@ -80,9 +79,9 @@ const BudgetInsights: React.FC<BudgetInsightsProps> = ({ month, year }) => {
                 <span>
                   You've used{' '}
                   <span className="font-semibold">
-                    ${insight.actualAmount.toFixed(2)}
+                    ₹{insight.actualAmount.toFixed(2)}
                   </span>{' '}
-                  of your ${insight.budgetAmount.toFixed(2)} {insight.categoryName} budget
+                  of your ₹{insight.budgetAmount.toFixed(2)} {insight.categoryName} budget
                   ({Math.round(insight.percentageUsed)}%)
                 </span>
               )}

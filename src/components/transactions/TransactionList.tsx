@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -28,7 +27,7 @@ const TransactionList: React.FC<TransactionListProps> = ({
   const navigate = useNavigate();
 
   const formatAmount = (amount: number, type: 'income' | 'expense'): string => {
-    return `${type === 'income' ? '+' : '-'} $${amount.toFixed(2)}`;
+    return `${type === 'income' ? '+' : '-'} ₹${amount.toFixed(2)}`;
   };
 
   const handleEdit = (id: string) => {

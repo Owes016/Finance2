@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
@@ -109,7 +108,7 @@ const TransactionForm: React.FC = () => {
                   <FormLabel>Amount</FormLabel>
                   <FormControl>
                     <div className="relative">
-                      <span className="absolute left-3 top-1/2 -translate-y-1/2">$</span>
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2">₹</span>
                       <Input
                         type="number"
                         placeholder="0.00"

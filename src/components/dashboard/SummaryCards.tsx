@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowDownIcon, ArrowUpIcon, CreditCard, DollarSign, TrendingDown } from 'lucide-react';
@@ -57,9 +56,9 @@ const SummaryCards: React.FC<SummaryCardsProps> = ({
 
   // Format numbers as currency
   const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('en-IN', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'INR',
       minimumFractionDigits: 2,
     }).format(amount);
   };
@@ -77,7 +76,7 @@ const SummaryCards: React.FC<SummaryCardsProps> = ({
           <CardTitle className="text-sm font-medium">
             Total Income
           </CardTitle>
-          <DollarSign className="h-4 w-4 text-green-600" />
+          <span className="h-4 w-4 text-green-600 font-bold">₹</span>
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">{formatCurrency(totalIncome)}</div>

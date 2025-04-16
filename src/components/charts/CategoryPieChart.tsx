@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import { useFinance } from '@/context/FinanceContext';
@@ -57,7 +56,7 @@ const CategoryPieChart: React.FC<CategoryPieChartProps> = ({
       return (
         <div className="bg-white p-3 border border-gray-200 rounded-md shadow-md">
           <p className="font-semibold">{data.name}</p>
-          <p>${data.value.toFixed(2)}</p>
+          <p>₹{data.value.toFixed(2)}</p>
           <p>{percentage}% of total</p>
         </div>
       );
@@ -76,7 +75,7 @@ const CategoryPieChart: React.FC<CategoryPieChartProps> = ({
               className="w-3 h-3 rounded-full mr-1"
               style={{ backgroundColor: entry.color }}
             />
-            <span>{entry.value}: ${data.find(d => d.name === entry.value)?.value.toFixed(2)}</span>
+            <span>{entry.value}: ₹{data.find(d => d.name === entry.value)?.value.toFixed(2)}</span>
           </li>
         ))}
       </ul>

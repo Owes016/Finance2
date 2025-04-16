@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   BarChart,
@@ -56,9 +55,9 @@ const MonthlyExpenseChart: React.FC<MonthlyExpenseChartProps> = ({
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
-          <YAxis tickFormatter={(value) => `$${value}`} />
+          <YAxis tickFormatter={(value) => `₹${value}`} />
           <Tooltip 
-            formatter={(value: number) => [`$${value.toFixed(2)}`, 'Expenses']} 
+            formatter={(value: number) => [`₹${value.toFixed(2)}`, 'Expenses']} 
             labelFormatter={(label) => `Month: ${label}`}
           />
           <Legend />
